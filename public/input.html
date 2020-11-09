@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="document" content="Exemplo de formulário HTML5">
-    <title>Input types</title>
+    <meta name="document" content="Exemplo de layout HTML5">
+    <title>Tipos de input</title>
+    <link rel="stylesheet" href="css/style.css">
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -15,51 +16,51 @@
     <main>
         
         <section>
-            <h1>Input Types</h1>
+            <h1>Tipos de "input"</h1>
             <form>
                 <div class="form-group">
-                    <label for="color">Cor</label>
-                    <input type="color">
+                    <label for="cor">Cor</label>
+                    <input type="color" id="cor">
                 </div>
                 <div class="form-group">
-                    <label for="color">Data</label>
-                    <input type="date">
+                    <label for="data">Data</label>
+                    <input type="date" id="data">
                 </div>
                 <div class="form-group">
-                    <label for="color">Hora</label>
-                    <input type="time">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora">
                 </div>
                 <div class="form-group">
-                    <label for="color">Data e hora</label>
-                    <input type="datetime-local">
+                    <label for="data-hora">Data e hora</label>
+                    <input type="datetime-local" id="data-hora">
                 </div>
                 <div class="form-group">
-                    <label for="color">Mês</label>
-                    <input type="month">
+                    <label for="mes">Mês</label>
+                    <input type="month" id="mes">
                 </div>
                 <div class="form-group">
-                    <label for="color">Semana</label>
-                    <input type="week">
+                    <label for="semana">Semana</label>
+                    <input type="week" id="semana">
                 </div>
                 <div class="form-group">
-                    <label for="color">Url</label>
-                    <input type="url">
+                    <label for="url">Url</label>
+                    <input type="url" id="url">
                 </div>
                 <div class="form-group">
-                    <label for="color">E-mail</label>
-                    <input type="email">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
                 </div>
                 <div class="form-group">
-                    <label for="color">Pesquisa</label>
-                    <input type="search">
+                    <label for="pesquisa">Pesquisa</label>
+                    <input type="search" id="pesquisa">
                 </div>
                 <div class="form-group">
-                    <label for="color">Número</label>
-                    <input type="number" min="0" max="100" step="10">
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" min="0" max="100" step="10">
                 </div>
                 <div class="form-group">
-                    <label for="color">Lista</label>
-                    <input list="codes" name="code" x-moz-errormessage="Customize error only in Firefox!" title="Customize a part of de error" required>
+                    <label for="lista">Lista</label>
+                    <input id="lista" list="codes" name="code" x-moz-errormessage="Customize error only in Firefox!" title="Customize a part of de error" required>
                     <datalist id="codes">
                         <option value="Javascript"></option>
                         <option value="PHP"></option>
@@ -68,7 +69,7 @@
                         <option value="Python"></option>
                     </datalist>
                 </div>
-                <button>Submit</button>
+                <button class="btn btn-primary">Submit</button>
             </form>
         </section>
         
@@ -76,9 +77,9 @@
             <h1>Output</h1>
             <form oninput="x.value = parseInt(a.value) + parseInt(b.value), y.value = parseInt(a.value)">
                 <div class="form-group">
-                    <label for="color">Range</label>
+                    <label for="range">Range</label>
                     0
-                    <input type="range" name="a" value="50" min="0" max="100">
+                    <input type="range" id="range" name="a" value="50" min="0" max="100">
                     100
                     +
                     <input type="text" name="b" value="1000">
@@ -94,18 +95,18 @@
             <!-- <form autocomplete="off"> -->
             <form>
                 <div class="form-group">
-                    <label for="fname">Primeiro nome</label>
-                    <input type="text" name="fname">
+                    <label for="fname-1">Primeiro nome</label>
+                    <input type="text" id="fname-1" name="fname">
                 </div>
                 <div class="form-group">
-                    <label for="lname">Último nome</label>
-                    <input type="text" name="lname">
+                    <label for="lname-1">Último nome</label>
+                    <input type="text" id="lname-1" name="lname">
                 </div>
                 <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" autocomplete="off">
+                    <label for="email-1">E-mail</label>
+                    <input type="email" id="email-1" name="email" autocomplete="off">
                 </div>
-                <button>Submit</button>
+                <button class="btn btn-primary">Submit</button>
             </form>
         </section>
 
@@ -114,18 +115,18 @@
             <!-- <form novalidate> -->
             <form>
                 <div class="form-group">
-                    <label for="fname">Primeiro nome</label>
-                    <input type="text" name="fname" required autofocus>
+                    <label for="fname-2">Primeiro nome</label>
+                    <input type="text" id="fname-2" name="fname" required autofocus>
                 </div>
                 <div class="form-group">
-                    <label for="lname">Último nome</label>
-                    <input type="text" name="lname">
+                    <label for="lname-2">Último nome</label>
+                    <input type="text" id="lname-2" name="lname">
                 </div>
                 <div class="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="email" name="email" novalidate>
+                    <label for="email-2">E-Mail</label>
+                    <input type="email" id="email-2" name="email" novalidate>
                 </div>
-                <button>Submit</button>
+                <button class="btn btn-primary">Submit</button>
             </form>
         </section>
         
@@ -133,26 +134,28 @@
             <h1>Atributo "form"</h1>
             <form id="form-id" method="get">
                 <div class="form-group">
-                    <label for="fname">Primeiro nome</label>
-                    <input type="text" name="fname" required>
+                    <label for="fname-out-form">Primeiro nome</label>
+                    <input type="text" id="fname-out-form" name="fname" required>
                 </div>
                 <div class="form-group">
-                    <label for="lname">Último nome</label>
-                    <input type="text" name="lname" required>
+                    <label for="lname-out-form">Último nome</label>
+                    <input type="text" id="lname-out-form" name="lname" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="email" name="email">
+                    <label for="email-out-form">E-Mail</label>
+                    <input type="email" id="email-out-form" name="email">
                 </div>
-                <button>Submit</button>
-                <button formnovalidate >Submit Novalidate</button>
-                <button formnovalidate formmethod="post" >Submit Method</button>
-                <button formnovalidate formaction="index.html" >Submit Action</button>
+                <button class="btn btn-primary">Submit</button>
+                <button class="btn btn-primary" formnovalidate >Submit Novalidate</button>
+                <button class="btn btn-primary" formnovalidate formmethod="post" >Submit Method</button>
+                <button class="btn btn-primary" formnovalidate formaction="index.html" >Submit Action</button>
             </form>
-            <div class="form-group">
-                <label for="email">Cor</label>
-                <input type="color" name="color" form="form-id">
-            </div>
+            <p>
+                <div class="form-group">
+                    <label for="cor-out-form">Cor</label>
+                    <input type="color" id="cor-out-form" name="color" form="form-id">
+                </div>
+            </p>
         </section>
         
         <section>
@@ -160,9 +163,9 @@
             <form>
                 <div class="form-group">
                     <label for="cep">CEP</label>
-                    <input type="text" name="cep" pattern="\d{5}-?\d{3}">
-                    <button>Submit</button>
+                    <input type="text" id="cep" name="cep" pattern="\d{5}-?\d{3}">
                 </div>
+                <button class="btn btn-primary">Submit</button>
             </form>
         </section>
 
@@ -171,9 +174,9 @@
             <form>
                 <div class="form-group">
                     <label for="cpf">CPF</label>
-                    <input type="text" name="cpf" oninput="vCpf(this)">
-                    <button>Submit</button>
+                    <input type="text" id="cpf" name="cpf" oninput="vCpf(this)">
                 </div>
+                <button class="btn btn-primary">Submit</button>
             </form>
         </section>
 

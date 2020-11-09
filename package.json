@@ -1,0 +1,19 @@
+{
+  "name": "html5",
+  "version": "1.0.0",
+  "description": "HTML5 + SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "./node_modules/.bin/node-sass sass -o public/css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maurouberti/html.git"
+  },
+  "author": "Mauro Uberti <maurouberti@hotmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

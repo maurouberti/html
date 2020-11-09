@@ -1,0 +1,97 @@
+@import "colors";
+
+.btn {            
+	font-style: 14px;
+    padding: .575rem .75rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@mixin newButton($back_color, $border_color, $font_color){
+	text-align: center;
+	vertical-align: middle;
+    background-color: $back_color;
+	border: 1px solid $border_color;
+	color: $font_color;
+	&:hover {
+		opacity: 0.7;
+	}
+	&:active {
+		opacity: 0.8;
+    }
+	&:disabled {
+        background-color: #ccc !important;
+		border-color: #ccc !important;
+		color: #888 !important;
+    }
+    &:disabled:hover {
+        cursor: default;
+        opacity: 1;
+    }
+}
+
+.btn-default {
+    @include newButton($color_back_default, $color_back_default, $color_font_default);
+}
+
+.btn-primary {
+    @include newButton($color_back_primary, $color_back_primary, $color_font_primary);
+}
+
+.btn-secondary {
+    @include newButton($color_back_secondary, $color_back_secondary, $color_font_secondary);
+}
+
+.btn-tertiary {
+    @include newButton($color_back_tertiary, $color_back_tertiary, $color_font_tertiary);
+}
+
+.btn-success {
+    @include newButton($color_back_success, $color_back_success, $color_font_success);
+}
+
+.btn-info {
+    @include newButton($color_back_info, $color_back_info, $color_font_info);
+}
+
+.btn-warning {
+    @include newButton($color_back_warning, $color_back_warning, $color_font_warning);
+}
+
+.btn-danger {
+    @include newButton($color_back_danger, $color_back_danger, $color_font_danger);
+}
+
+.btn-outline-default {
+    @include newButton(#fff, $color_font_default, $color_font_default);
+}
+
+.btn-outline-primary {
+    @include newButton(#fff, $color_back_primary, $color_back_primary);
+}
+
+.btn-outline-secondary {
+    @include newButton(#fff, $color_back_secondary, $color_back_secondary);
+}
+
+.btn-outline-tertiary {
+    @include newButton(#fff, $color_back_tertiary, $color_back_tertiary);
+}
+
+.btn-outline-success {
+    @include newButton(#fff, $color_back_success, $color_back_success);
+}
+
+.btn-outline-info {
+    @include newButton(#fff, $color_back_info, $color_back_info);
+}
+
+.btn-outline-warning {
+    @include newButton(#fff, $color_back_warning, $color_back_warning);
+}
+
+.btn-outline-danger {
+    @include newButton(#fff, $color_back_danger, $color_back_danger);
+}
