@@ -22,9 +22,9 @@
 		opacity: 0.8;
     }
 	&:disabled {
-        background-color: #ccc !important;
-		border-color: #ccc !important;
-		color: #888 !important;
+        background-color: #eee !important;
+		border-color: #eee !important;
+		color: #ccc !important;
     }
     &:disabled:hover {
         cursor: default;
@@ -64,6 +64,14 @@
     @include newButton($color_back_danger, $color_back_danger, $color_font_danger);
 }
 
+.btn-light {
+    @include newButton($color_back_light, $color_back_light, $color_font_light);
+}
+
+.btn-dark {
+    @include newButton($color_back_dark, $color_back_dark, $color_font_dark);
+}
+
 .btn-outline-default {
     @include newButton(#fff, $color_font_default, $color_font_default);
 }
@@ -94,4 +102,12 @@
 
 .btn-outline-danger {
     @include newButton(#fff, $color_back_danger, $color_back_danger);
+}
+
+.btn-outline-light {
+    @include newButton(#fff, $color_back_light, $color_back_light);
+}
+
+.btn-outline-dark {
+    @include newButton(#fff, $color_back_dark, $color_back_dark);
 }

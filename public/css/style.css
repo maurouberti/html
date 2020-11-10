@@ -1,6 +1,5 @@
 html, body {
   margin: 0;
-  padding: 32px;
   font-family: Helvetica;
   color: #444;
   background-color: #fff; }
@@ -69,9 +68,9 @@ abbr {
   .btn-default:active {
     opacity: 0.8; }
   .btn-default:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-default:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -87,9 +86,9 @@ abbr {
   .btn-primary:active {
     opacity: 0.8; }
   .btn-primary:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-primary:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -105,9 +104,9 @@ abbr {
   .btn-secondary:active {
     opacity: 0.8; }
   .btn-secondary:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-secondary:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -123,9 +122,9 @@ abbr {
   .btn-tertiary:active {
     opacity: 0.8; }
   .btn-tertiary:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-tertiary:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -141,9 +140,9 @@ abbr {
   .btn-success:active {
     opacity: 0.8; }
   .btn-success:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-success:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -159,9 +158,9 @@ abbr {
   .btn-info:active {
     opacity: 0.8; }
   .btn-info:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-info:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -177,9 +176,9 @@ abbr {
   .btn-warning:active {
     opacity: 0.8; }
   .btn-warning:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-warning:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -195,10 +194,46 @@ abbr {
   .btn-danger:active {
     opacity: 0.8; }
   .btn-danger:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-danger:disabled:hover {
+    cursor: default;
+    opacity: 1; }
+
+.btn-light {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  color: #878787; }
+  .btn-light:hover {
+    opacity: 0.7; }
+  .btn-light:active {
+    opacity: 0.8; }
+  .btn-light:disabled {
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
+  .btn-light:disabled:hover {
+    cursor: default;
+    opacity: 1; }
+
+.btn-dark {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: #fff; }
+  .btn-dark:hover {
+    opacity: 0.7; }
+  .btn-dark:active {
+    opacity: 0.8; }
+  .btn-dark:disabled {
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
+  .btn-dark:disabled:hover {
     cursor: default;
     opacity: 1; }
 
@@ -213,9 +248,9 @@ abbr {
   .btn-outline-default:active {
     opacity: 0.8; }
   .btn-outline-default:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-outline-default:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -231,9 +266,9 @@ abbr {
   .btn-outline-primary:active {
     opacity: 0.8; }
   .btn-outline-primary:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-outline-primary:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -249,9 +284,9 @@ abbr {
   .btn-outline-secondary:active {
     opacity: 0.8; }
   .btn-outline-secondary:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-outline-secondary:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -267,9 +302,9 @@ abbr {
   .btn-outline-tertiary:active {
     opacity: 0.8; }
   .btn-outline-tertiary:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-outline-tertiary:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -285,9 +320,9 @@ abbr {
   .btn-outline-success:active {
     opacity: 0.8; }
   .btn-outline-success:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-outline-success:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -303,9 +338,9 @@ abbr {
   .btn-outline-info:active {
     opacity: 0.8; }
   .btn-outline-info:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-outline-info:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -321,9 +356,9 @@ abbr {
   .btn-outline-warning:active {
     opacity: 0.8; }
   .btn-outline-warning:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-outline-warning:disabled:hover {
     cursor: default;
     opacity: 1; }
@@ -339,10 +374,46 @@ abbr {
   .btn-outline-danger:active {
     opacity: 0.8; }
   .btn-outline-danger:disabled {
-    background-color: #ccc !important;
-    border-color: #ccc !important;
-    color: #888 !important; }
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
   .btn-outline-danger:disabled:hover {
+    cursor: default;
+    opacity: 1; }
+
+.btn-outline-light {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  color: #e0e0e0; }
+  .btn-outline-light:hover {
+    opacity: 0.7; }
+  .btn-outline-light:active {
+    opacity: 0.8; }
+  .btn-outline-light:disabled {
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
+  .btn-outline-light:disabled:hover {
+    cursor: default;
+    opacity: 1; }
+
+.btn-outline-dark {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #303030;
+  color: #303030; }
+  .btn-outline-dark:hover {
+    opacity: 0.7; }
+  .btn-outline-dark:active {
+    opacity: 0.8; }
+  .btn-outline-dark:disabled {
+    background-color: #eee !important;
+    border-color: #eee !important;
+    color: #ccc !important; }
+  .btn-outline-dark:disabled:hover {
     cursor: default;
     opacity: 1; }
 

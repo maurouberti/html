@@ -1,0 +1,76 @@
+@import "import/colors";
+
+header {
+    display: flex;
+    background: linear-gradient(to right, $color_back_primary, $color_back_secondary);
+    color: $color_font_primary;
+    padding: 0 16px;
+}
+
+nav {
+    display: flex;
+    background-color: $color_back_light;
+    color: $color_font_light;
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            display: list-item;
+            list-style: none;
+            a {
+                padding: 0 0.5rem;
+                text-decoration: none;
+                &:hover {
+                    opacity: 80%;
+                }
+                &:link, &:visited, &:active {
+                    color: inherit;
+                }
+            }
+        }
+    } 
+}
+
+main section, main aside {
+    display: inline-block;
+}
+
+.card {
+    background-color: #fff;
+    margin: 0 0 32px 0;
+    padding: 8px 32px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px;
+}
+
+main {
+    padding: 16px 32px;
+    section {
+        @extend .card;
+        width: calc(100% - 336px);
+    }
+    aside {
+        @extend .card;
+        float: right;
+        width: 320px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color_back_dark;
+    color: $color_font_dark;
+    padding: 0 64px;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    margin: 0.5em;
+    padding: 0.5em;
+}
